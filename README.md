@@ -1,5 +1,12 @@
-Use vagrant
------------
+Wenlu
+-----
+
+Wenlu is closed but open sourced. We can use it to setup a custom google proxy engin.
+
+https://github.com/cuber/ngx_http_google_filter_module
+
+Use vagrant to try it locally
+---------------------------------
 
 ```
 mkdir ubuntu14.04
@@ -103,7 +110,7 @@ Then visit: `http://127.0.0.1:10080` (rather than `localhost`), you will see a l
 10.0.2.2 - - [16/Oct/2015:11:37:04 +0000] "GET /search?newwindow=1&site=&source=hp&q=aaa&oq=aaa&gs_l=hp.3...
 ```
 
-So we know which keywords are used by users.
+You can see `q=aaa` is the keyword used by users.
 
 Note: if it's not working, check `/usr/local/nginx/logs/error.log` to see if there is any errors. If not, try to clear cookies or using an incognite window.
 
